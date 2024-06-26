@@ -1,8 +1,6 @@
-import java.util.List;
-import java.util.ArrayList;
 import java.util.*;
 
-public class ArrayListTwo{
+public class ArrayListThree{
     public static void main(String[] args) {
         List<String> enames=new ArrayList<String>();
         enames.add("Rahul");
@@ -25,10 +23,16 @@ public class ArrayListTwo{
             System.out.println(itr.next());
          }
 
-        enames.set(1, "Sonia Gandhi");
-        System.out.println(enames);
-        enames.remove(4);
-        System.out.println(enames);
+       Collections.sort(enames);
+
+       System.out.println(enames);
+
+
+       Collections.sort(enames, Collections.reverseOrder());
+       System.out.println(enames);
+
+       Collections.shuffle(enames);
+       System.out.println(enames);
 
     }
 }
