@@ -1,11 +1,18 @@
 public class Demo {
    public static void main(String[] args) {
-    int x=5;
-    int y=8;
+    int x=8;
+    int y=7;
+    int z=16;
+    if (x>y && x>z) {
+      System.out.println(x);
+    }
+    else if(y>x && y>z){
+      System.out.println(y);
+    }
+    else{
+      System.out.println(z);
+    }
 
-    int a=4;
-    int b=7;
-    boolean result = x<y || a>b;
-    System.out.println(result);
+    
    } 
 }
